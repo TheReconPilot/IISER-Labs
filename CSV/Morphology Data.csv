@@ -1,0 +1,25 @@
+Character,Notopterus,Monopterus,Mystus,Etroplus,Parambassis,Macrognathus,Sperata,Systomus,Puntius,Garra,Lepidocephalichthys,Hyporhamphus
+Dorsal fin present,1,0,1,1,1,1,1,1,1,1,1,1
+Adipose dorsal fin present,0,0,1,,0,1,1,0,0,0,0,0
+Spinous dorsal fin present,0,0,0,1,1,0,1,1,1,0,0,1
+Pectoral fin present,1,0,1,1,1,1,1,1,1,1,1,1
+Ventral fin present,1,0,1,1,1,1,1,1,1,1,1,1
+Ventral fin united,1,0,0,1,1,0,0,0,0,0,0,0
+Anal fin present,1,0,1,1,1,1,1,1,1,1,1,1
+Dorsal fin united with caudal fin,1,0,0,0,0,1,0,0,0,0,0,0
+Anal fin united with caudal fin,1,0,0,0,0,1,0,0,0,0,0,0
+Caudal fin round,0,0,0,0,0,1,0,0,0,0,0,1
+Caudal fin forked,0,0,1,0,1,0,1,1,1,1,0,0
+Caudal fin truncated,,0,0,1,0,0,0,0,0,0,1,0
+Scales present,1,0,0,1,0,0,0,1,1,1,0,0
+Scales on head,0,0,0,0,1,0,0,0,0,0,0,1
+Barbels present,0,0,1,0,0,0,1,0,0,1,1,0
+Body eel like,0,1,0,0,0,1,0,0,0,0,0,0
+Body compressed,1,0,1,1,1,1,1,1,1,1,1,0
+Body round,0,1,0,0,0,0,0,0,0,1,0,1
+Dorsal fin in front of ventral fin,,0,1,0,0,0,1,0,1,1,1,0
+Mouth projecting in beak like process,,0,0,0,0,1,0,0,0,0,0,1
+Mouth terminal,1,0,1,1,1,0,1,1,1,1,1,0
+Mouth upwardly projected,1,1,0,0,1,0,0,0,0,0,0,0
+Mouth ventrally situated,0,1,0,0,0,1,0,0,0,0,0,0
+Sucktorial disk present,0,0,0,0,0,0,0,0,0,1,0,0
