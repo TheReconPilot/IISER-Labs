@@ -24,7 +24,7 @@ D_ud = down - up
 #D_avg = (D_ud + D_lr) / 2 
 
 # The final array for D
-D = D_ud
+D = D_ud        # mm
 
 n = len(D)
 
@@ -89,7 +89,7 @@ plt.plot(x, y, ".")
 plt.plot(xval, yval, "g-")
 
 plt.xlabel("m")
-plt.ylabel(r"$\sf D_{n+m}^2 - D_{n}^2\ (cm^2)$")
+plt.ylabel(r"$\sf D_{n+m}^2 - D_{n}^2\ (mm^2)$")
 plt.title(f"{filename}")
 
 bbox_props = dict(boxstyle = "square, pad = 0.4", fc = "white", ec = "black")
@@ -104,7 +104,7 @@ plt.annotate(r'$\sf R^2 = ${}'.format(r_squared_text),
 plt.annotate("Radius of Curvature", xy = (0.6, 0.37), xycoords = "axes fraction")
 plt.annotate(r'$\sf R = \dfrac{D_{n+m}^2-D_{n}^2}{4m\lambda} = \dfrac{p}{4\lambda}$', 
              xy = (0.6, 0.25), xycoords = "axes fraction", bbox = bbox_props)
-plt.annotate(f"R = {R_text} m", xy = (0.6, 0.13), xycoords = "axes fraction", 
+plt.annotate(f"R = {R_text} cm", xy = (0.6, 0.13), xycoords = "axes fraction", 
              bbox = bbox_props)
 
 plt.show()
