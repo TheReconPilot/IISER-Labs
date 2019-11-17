@@ -1,9 +1,15 @@
 import numpy as np 
 import matplotlib.pyplot as plt 
 from scipy.optimize import curve_fit
+from uncertainties import ufloat
+
+lambda_SL = 589*1E-9        # Sodium Lamp Wavelength
+lambda_GL = 532*1E-9        # Green Laser Wavelength
+
+filename = "Green Laser"
 
 # Extract Data
-data_file = np.loadtxt("Green Laser Data.csv", delimiter = ",", skiprows = 1)
+data_file = np.loadtxt(f"{filename} Data.csv", delimiter = ",", skiprows = 1)
 
 # Load the data into variables
 order = data_file[:, 0]
@@ -37,8 +43,8 @@ x, y = (list(t) for t in zip(*sorted(zip(x, y))))
 
 # --- START CURVE_FIT AND PLOTTING ---
 
-def linear(x, m):
-    return m*x
+def linear(x, p):
+    return p*x
 
 # Set variables for curve_fit
 f = linear
@@ -55,16 +61,28 @@ r_squared = 1 - (ss_res / ss_tot)
 
 
 # Setting variables for plot based on curve_fit parameters
-m = popt[0]
+p = popt[0]
 xval = np.linspace(x[0], x[-1], 100)
-yval = f(xval, m)
+yval = f(xval, p)
 
 r_squared_text = "{:.4f}".format(r_squared)
-m_text = "{:.4f}".format(m)
+p_text = "{:.4f}".format(p)
 
-print(f"m = {m} = {m_text}")
+print(f"p = {p} = {p_text}")
 print(f"R^2 = {r_squared} = {r_squared_text}")
 
+# Standard Deviation Error in Fitted Parameter
+parameter_err = np.sqrt(np.diag(pcov))
+p_error = parameter_err[0]
+p_error_text = "{:.4f}".format(p_error)
+print(f"p_error = {p_error} = {p_error_text}")
+
+p = ufloat(p, p_error)
+R = p / (4 * lambda_GL * 1E4)
+
+print("R = {:.3uP}".format(R))
+
+R_text = "{:.3uP}".format(R)
 
 # The Plots
 plt.plot(x, y, ".")
@@ -72,14 +90,22 @@ plt.plot(xval, yval, "g-")
 
 plt.xlabel("m")
 plt.ylabel(r"$\sf D_{n+m}^2 - D_{n}^2\ (cm^2)$")
-plt.title("Green Laser")
+plt.title(f"{filename}")
 
 bbox_props = dict(boxstyle = "square, pad = 0.4", fc = "white", ec = "black")
 
-plt.annotate(f"y = mx\nm = {m_text}", xy = (0.1, 0.85), 
+plt.annotate(f"y = px", xy = (0.1, 0.85), 
+             xycoords = "axes fraction", bbox = bbox_props)
+plt.annotate(r'$\sf p = ${}$\pm${}'.format(p_text, p_error_text), xy = (0.1, 0.75), 
              xycoords = "axes fraction", bbox = bbox_props)
 plt.annotate(r'$\sf R^2 = ${}'.format(r_squared_text),
-             xy = (0.1, 0.75), xycoords = "axes fraction", bbox = bbox_props)
+             xy = (0.1, 0.65), xycoords = "axes fraction", bbox = bbox_props)
 
-plt.show()
-#plt.savefig("NR Green Laser Graph.png") 
+plt.annotate("Radius of Curvature", xy = (0.6, 0.37), xycoords = "axes fraction")
+plt.annotate(r'$\sf R = \dfrac{D_{n+m}^2-D_{n}^2}{4m\lambda} = \dfrac{p}{4\lambda}$', 
+             xy = (0.6, 0.25), xycoords = "axes fraction", bbox = bbox_props)
+plt.annotate(f"R = {R_text} m", xy = (0.6, 0.13), xycoords = "axes fraction", 
+             bbox = bbox_props)
+
+#plt.show()
+plt.savefig(f"NR {filename} Graph.png") 
