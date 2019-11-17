@@ -72,7 +72,7 @@ plt.plot(xval, yval, "g-")
 
 plt.xlabel("m")
 plt.ylabel(r"$\sf D_{n+m}^2 - D_{n}^2\ (cm^2)$")
-plt.title("Newton's Rings")
+plt.title("Sodium Lamp")
 
 bbox_props = dict(boxstyle = "square, pad = 0.4", fc = "white", ec = "black")
 
