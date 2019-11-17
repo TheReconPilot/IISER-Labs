@@ -68,7 +68,7 @@ yval = f(xval, p)
 r_squared_text = "{:.4f}".format(r_squared)
 p_text = "{:.4f}".format(p)
 
-print(f"m = {p} = {p_text}")
+print(f"p = {p} = {p_text}")
 print(f"R^2 = {r_squared} = {r_squared_text}")
 
 # Standard Deviation Error in Fitted Parameter
