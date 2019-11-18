@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 from uncertainties import ufloat
 
-lambda_SL = 589*1E-9        # Sodium Lamp Wavelength
+lambda_SL = 589.2*1E-9        # Sodium Lamp Wavelength
 lambda_GL = 532*1E-9        # Green Laser Wavelength
 
 filename = "Green Laser"
@@ -78,11 +78,12 @@ p_error_text = "{:.4f}".format(p_error)
 print(f"p_error = {p_error} = {p_error_text}")
 
 p = ufloat(p, p_error)
-R = p / (4 * lambda_GL * 1E4)
+R_SL = ufloat(56.9304, 0.0797)  # cm
+lambda_calculated = (p * 1E5) / (4 * R_SL)
 
-print("R = {:.3uP}".format(R))
+print("Lambda of GL = {:.3uP}".format(lambda_calculated))
 
-R_text = "{:.3uP}".format(R)
+lambda_text = "{:.3uP}".format(lambda_calculated)
 
 # The Plots
 plt.plot(x, y, ".")
@@ -101,10 +102,10 @@ plt.annotate(r'$\sf p = ${}$\pm${}'.format(p_text, p_error_text), xy = (0.1, 0.7
 plt.annotate(r'$\sf R^2 = ${}'.format(r_squared_text),
              xy = (0.1, 0.65), xycoords = "axes fraction", bbox = bbox_props)
 
-plt.annotate("Radius of Curvature", xy = (0.6, 0.37), xycoords = "axes fraction")
-plt.annotate(r'$\sf R = \dfrac{D_{n+m}^2-D_{n}^2}{4m\lambda} = \dfrac{p}{4\lambda}$', 
+plt.annotate(r"$\sf Wavelength\ \lambda$", xy = (0.6, 0.37), xycoords = "axes fraction")
+plt.annotate(r'$\sf \lambda = \dfrac{D_{n+m}^2-D_{n}^2}{4mR} = \dfrac{p}{4R}$', 
              xy = (0.6, 0.25), xycoords = "axes fraction", bbox = bbox_props)
-plt.annotate(f"R = {R_text} cm", xy = (0.6, 0.13), xycoords = "axes fraction", 
+plt.annotate(r"$\sf \lambda = ${} nm".format(lambda_text), xy = (0.6, 0.13), xycoords = "axes fraction", 
              bbox = bbox_props)
 
 plt.show()
