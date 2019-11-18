@@ -2,7 +2,7 @@ import numpy as np
 from uncertainties import ufloat
 from uncertainties import unumpy as unp 
 
-lambda_SL = 589*1E-9        # Sodium Lamp Wavelength
+lambda_SL = 589.2*1E-9        # Sodium Lamp Wavelength
 lambda_GL = 532*1E-9        # Green Laser Wavelength
 
 filename = "Sodium Lamp"
