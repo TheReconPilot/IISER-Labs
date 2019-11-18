@@ -5,6 +5,8 @@ from uncertainties import unumpy as unp
 lambda_SL = 589.2*1E-9        # Sodium Lamp Wavelength
 lambda_GL = 532*1E-9        # Green Laser Wavelength
 
+R_SL = ufloat(56.917, 0.426)    # cm
+
 filename = "Green Laser"
 
 if filename == "Sodium Lamp":
@@ -46,9 +48,12 @@ for i in range(n):
 # Sort the x and y lists
 x, y = (list(t) for t in zip(*sorted(zip(x, y))))
 
-R = [y[i] * 100 / (x[i] * 4 * lambda_light) for i in range(len(x))]
-
-R_avg = np.mean(R)
+lambda_calculated = [y[i] * 1E11 / (x[i] * 4 * R_SL) for i in range(len(x))]
+lambda_mean = np.mean(lambda_calculated)    # nm
 
 print(f"{filename}")
-print("R = {:.3uP} cm".format(R_avg))
+print("Lambda = {:.3uP} nm".format(lambda_mean))
+print("Actual Lambda = 532 nm")
+
+error = ((532 - lambda_mean.n)*100)/532
+print("Percentage Error = {:.3f}".format(error))
