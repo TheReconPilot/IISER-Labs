@@ -1,5 +1,5 @@
 \documentclass[twocolumn]{article}
-\usepackage{amsmath, amssymb, graphicx, hyperref, cuted}
+\usepackage{amsmath, amssymb, graphicx, hyperref, cuted, float, comment}
 
 \title{Seed Germination}
 \author{Purva Parmar \\ 20181081}
@@ -9,7 +9,7 @@
 \begin{document}
 \maketitle
 
-\graphicspath{{./Images/}}
+\graphicspath{{../Images/}}
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{\baselineskip}
@@ -316,6 +316,36 @@ Additional Data:
 These plates were left for a week in a room. Light was naturally as well as artificially available. Water was added periodically. 
 
 After a week, most of the seeds had germinated. 
+
+\subsection{Observations}
+
+\textbf{Percentage Germination of Seeds}
+
+\includegraphics[width = \linewidth]{Number of Seeds Germinated.png}
+
+
+\begin{comment}
+\subsubsection{Shoot Length}
+\begin{figure}[H]
+\includegraphics[width = \linewidth]{Shoot Length Barplot.png}
+\caption{Shoot Length Barplot with 95\% confidence intervals}
+\end{figure}
+
+\subsubsection{Root Length}
+
+\begin{figure}[H]
+\includegraphics[width = \linewidth]{Root Length Barplot.png}
+\caption{Root Length Barplot with 95\% confidence intervals}
+\end{figure}
+
+\subsubsection{Shoot/Root Length Ratio}
+
+\begin{figure}[ht!]
+\includegraphics[width = \linewidth]{SR Ratio Barplot.png}
+\caption{Shoot/Length Ratio Barplot with 95\% confidence intervals}
+\end{figure}
+\end{comment}
+
 
 %\begin{strip}
 %\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
