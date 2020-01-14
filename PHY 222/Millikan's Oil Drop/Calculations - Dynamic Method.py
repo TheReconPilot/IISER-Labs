@@ -33,7 +33,7 @@ for i in range(number_of_droplets):
 
 # CONSTANTS
 d = 0.005       # Distance between parallel plates, in m
-L = 0.001       # Distance between lines, in m
+L = 0.0005       # Distance between lines, in m
 d_rho = 928     # Difference in density of oil and air, in kg/m^3
 P = 0.76        # Atmospheric Pressure, in m of Hg
 eta = 1.8432e-5 # Coefficient of viscosity of air, in kg / (m.s)
