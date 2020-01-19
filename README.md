@@ -2,10 +2,7 @@
 
 This is the repository for storing all the code and document files for the Lab Experiment Analysis.
 
-The Folders:
-- PHY 221
-- CHM 221
-- BIO 221
+Sem 3 files aren't properly documented and are a blob of hard-to-understand code. Target is to make sure Sem 4 code is good, readable and fairly well documented.
 
 ___
 
