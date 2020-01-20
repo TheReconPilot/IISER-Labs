@@ -103,6 +103,9 @@ for i in range(len(nearest_neff)):
         x.append(nearest_neff[i].n)
         y.append(new_ne[i].n)
 
+# Adding the min_ne for extra point
+x.append(1)
+y.append(min_ne.n)
 
 # Trying out all differences in ne and finding lowest         
 lowest_diff_ne = abs(ne[1] - ne[0])
@@ -122,7 +125,7 @@ popt, pcov = curve_fit(linear, x, y)
 # Final values of e
 
 # e as approximate gcd
-e = np.mean(ne_by_neff)
+e = (np.mean(ne_by_neff) + min_ne) / 2
 
 # e from linear regression through points obtained above
 e_lr = ufloat(popt[0], np.sqrt(np.diag(pcov)))
