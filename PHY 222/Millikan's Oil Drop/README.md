@@ -20,6 +20,17 @@ The two Python programs calculate the errors in all the values.
 
 ___
 
+## Dependencies
+
+The code uses the following packages:
+- numpy
+- scipy
+- uncertainties
+
+Use `pip install <package-name>` to install the relevant packages if needed.
+
+___
+
 ## Data File Format
 
 Export the data in CSV Format. There must be no empty spaces, or the `numpy.loadtxt()` method will crash.
