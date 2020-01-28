@@ -48,18 +48,27 @@ e_by_m_graph = 7.576E+6 / (slope * I_0)
 
 ## Plotting
 
-xval = np.linspace(xdata[0], xdata[-1], 100)
+xval = np.linspace(xdata[0], xdata[-1], 100) 
 yval = f(xval, popt[0])
 
 
-print("R^2 =",r_squared)
+bbox_props = dict(boxstyle="square, pad=0.4", fc="white", ec="black")
+r_square_text = "{:.4f}".format(r_squared)
+slope_text = "{:.3eP}".format(slope)
 
 plt.plot(xdata, ydata, ".")
 plt.plot(xval, yval, "-")
+
+plt.annotate(f"y = {slope_text}x", xy=(0.1, 0.85), xycoords="axes fraction", bbox = bbox_props)
+plt.annotate(r"$R^2$ = {}".format(r_square_text), xy=(0.1, 0.75), xycoords="axes fraction", bbox = bbox_props)
+
+#plt.ylim(0, 0.012)
+#plt.xlim(60, 260)
 plt.title(f"I = {I_0} A")
 plt.xlabel("Accelerating Voltage (V)")
 plt.ylabel(r"Square of Diameter ($m^2$)")
 plt.show()
+#plt.savefig(f"{set_name} Graph.png")
 
 
 # Printing Stuff
@@ -86,5 +95,7 @@ print()
 
 print("--- e/m from graph ---")
 print("{:.3eP}".format(e_by_m_graph))
+print(f"Curve Fit: y = {popt[0]} x")
+print("R^2 =",r_squared)
 print("Error from literature value = {:.2f}%".format((abs(e_by_m_graph.n - e_by_m_lit_val) / e_by_m_lit_val)*100))
 
