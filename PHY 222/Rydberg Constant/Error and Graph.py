@@ -88,3 +88,7 @@ plt.annotate(r'$\rm R^2$ = {}'.format(r_squared_text), xy=(0.15, 0.75), xycoords
 plt.subplots_adjust(bottom=0.16)
 plt.show()
 #plt.savefig("Graph - Rydberg Constant.png")
+
+# R from Graph
+print("R from graph = {:.4eP}".format(m))
+print("Error from literature value = {:.2f}%".format((abs(R_litval - m.n)/R_litval)*100))
