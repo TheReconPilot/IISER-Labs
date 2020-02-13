@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<accession manifest_version='2'>
+  <head>
+    <id>0100064</id>
+    <version>1.1</version>
+    <timestamp>2014-02-04 01:10:22+00</timestamp>
+    <host>mare</host>
+    <directory>/nodc/archive/arc0051/0100064/1.1/</directory>
+    <file_count>13</file_count>
+    <byte_count>157685</byte_count>
+  </head>
+  <files>
+    <file>
+      <path>NODC-Readme.txt</path>
+      <digest algorithm='md5'>1aa8d73d906b820f8f3460b304215b17</digest>
+      <digest algorithm='sha1'>42d3e4677f04d8b256b110018e5541e1dd89eacf</digest>
+      <digest algorithm='sha256'>7b64d8de0cc632362642100dfcb02bf75e540ab1620ffb17e990dbbfc81b23be</digest>
+      <digest algorithm='sha384'>19cef9e1b00b7ce287bd9e1073cd54788faebd3152b65df8395df6fcafdd7b697dc20a2769f0234aa3d3207104010c9c</digest>
+      <digest algorithm='sha512'>9a4775c7161a3aefe10c92783bff4c5bf2c7aecaab66aea5b043408077645e9d4bccbf88ae3c8fd0d57fbae5883ff9cb0f5436b8bb2c20816326bc2fc2b80027</digest>
+      <type_category>regular</type_category>
+      <type>text</type>
+      <permissions>-rw-rw-r--</permissions>
+      <linkcount>1</linkcount>
+      <user>root</user>
+      <group>root</group>
+      <size>2129</size>
+      <blksize>32768</blksize>
+      <blocks>8</blocks>
+      <modtime>2005-10-05 19:07:19+00</modtime>
+      <changetime>2012-12-07 19:15:05+00</changetime>
+      <acctime>2014-02-04 01:10:22+00</acctime>
+      <sumtime>2014-02-04 01:10:22+00</sumtime>
+    </file>
+    <file>
+      <path>about</path>
+      <digest algorithm='md5'>d41d8cd98f00b204e9800998ecf8427e</digest>
+      <digest algorithm='sha1'>da39a3ee5e6b4b0d3255bfef95601890afd80709</digest>
+      <digest algorithm='sha256'>e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</digest>
+      <digest algorithm='sha384'>38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b</digest>
+      <digest algorithm='sha512'>cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e</digest>
+      <type_category>irregular</type_category>
+      <type>directory</type>
+      <permissions>drwxrwxr-x</permissions>
+      <linkcount>2</linkcount>
+      <user>root</user>
+      <group>root</group>
+      <size>4096</size>
+      <blksize>32768</blksize>
+      <blocks>8</blocks>
+      <modtime>2012-12-07 19:14:04+00</modtime>
+      <changetime>2012-12-07 19:15:05+00</changetime>
+      <acctime>2014-02-03 08:16:26+00</acctime>
+      <sumtime>2014-02-04 01:10:22+00</sumtime>
+    </file>
+    <file>
+      <path>about/0100064_FGDC-STD-001-1998.xml</path>
+      <digest algorithm='md5'>fd226b64268b7252558e012443ff4ee1</digest>
+      <digest algorithm='sha1'>1c5e346ad148574ec6290521343d9e91247ed46d</digest>
+      <digest algorithm='sha256'>c76e9b59b37ca4cc3dd91de48b79d30e506e8b5ba3ebe61eb4db053fcb91d723</digest>
+      <digest algorithm='sha384'>fcf6c0908c57bab0e3ff19525863c9c768603d0bb510bfa115c5e6403491bb99e79da8d38d983e792e7948c618b2ca78</digest>
+      <digest algorithm='sha512'>5fcf2bdc4307a663df4fbd381ef5cf4a0c3cc02cc75fd83db143687ddee21dd09206112c8c3b0b93766736fb28f1626b64674519e3c1df6d874bfde6aee24e2c</digest>
+      <type_category>regular</type_category>
+      <type>text</type>
+      <permissions>-rw-rw-r--</permissions>
+      <linkcount>1</linkcount>
+      <user>root</user>
+      <group>root</group>
+      <size>11500</size>
+      <blksize>32768</blksize>
+      <blocks>24</blocks>
+      <modtime>2012-12-07 19:14:04+00</modtime>
+      <changetime>2012-12-07 19:15:05+00</changetime>
+      <acctime>2014-02-04 01:10:22+00</acctime>
+      <sumtime>2014-02-04 01:10:22+00</sumtime>
+    </file>
+    <file>
+      <path>about/0100064_lonlat.txt</path>
+      <digest algorithm='md5'>24fcc6dbc6c030e27ff68a140f9d64a9</digest>
+      <digest algorithm='sha1'>ff2b64e72cdb224111219315d7bf9108bbdd032a</digest>
+      <digest algorithm='sha256'>543fb2a6efb90f31788c051b760e24d93e431fc1a5521df3ff703c2869c49d9e</digest>
+      <digest algorithm='sha384'>1ea247120a2d8072a4554667920bc2e60e2949240ada2bf86dec5a8ab0fcadbaba5b982ea39b52b257a12936c6a037be</digest>
+      <digest algorithm='sha512'>d85d8439d141c552724e360791c23c60cea3c78d9fcf615013fb3518458f5101e09da93ecbcbe8cd897a403f130e87b91f668b58f280b11975000d198a15be48</digest>
+      <type_category>regular</type_category>
+      <type>text</type>
+      <permissions>-rw-rw-r--</permissions>
+      <linkcount>1</linkcount>
+      <user>root</user>
+      <group>root</group>
+      <size>15</size>
+      <blksize>32768</blksize>
+      <blocks>8</blocks>
+      <modtime>2012-12-07 19:13:56+00</modtime>
+      <changetime>2012-12-07 19:15:05+00</changetime>
+      <acctime>2014-02-04 01:10:22+00</acctime>
+      <sumtime>2014-02-04 01:10:22+00</sumtime>
+    </file>
+    <file>
+      <path>about/0100064_map.jpg</path>
+      <digest algorithm='md5'>a7c5d0ecdca5c5ef79a836d67e1d813c</digest>
+      <digest algorithm='sha1'>cc346d3525cf1823ea8edf24dbd70a16c60c96eb</digest>
+      <digest algorithm='sha256'>e9f54bc7fa9f365f4104dbe93aa476081cb9811ecd0c3fd9a3b23c7c19b84fa7</digest>
+      <digest algorithm='sha384'>32b2a05225f5929aefce9914e0d287441ee9c75d7d5d743b468cd99e8d9e55c70791d906d471d66dad5b63a93304d86f</digest>
+      <digest algorithm='sha512'>5e72c7347d829895427fe6e60413e9a58c4edc54e105852835b77d7990327ed44ef34a2ef4b577e898f53a54503ce0d338ff45f571f21b4173c3206d24c8f0d6</digest>
+      <type_category>regular</type_category>
+      <type>binary</type>
+      <permissions>-rw-rw-r--</permissions>
+      <linkcount>1</linkcount>
+      <user>root</user>
+      <group>root</group>
+      <size>97929</size>
+      <blksize>32768</blksize>
+      <blocks>200</blocks>
+      <modtime>2012-12-07 19:13:58+00</modtime>
+      <changetime>2012-12-07 19:15:05+00</changetime>
+      <acctime>2014-02-04 01:10:22+00</acctime>
+      <sumtime>2014-02-04 01:10:22+00</sumtime>
+    </file>
+    <file>
+      <path>about/journal.txt</path>
+      <digest algorithm='md5'>cd0b50ea7399a1919ee2fe5d122b4a9f</digest>
+      <digest algorithm='sha1'>ca06f776609dbc139c5fad5105481e19d3a2a965</digest>
+      <digest algorithm='sha256'>446414527ab3e44bf088d206da867e5694e709415781dd0491e16a982f5b48bb</digest>
+      <digest algorithm='sha384'>207047c225d52dec1a40af77473655369c68c021b15b420edd30cf038572452b0dc80d8e7b564e4dd6465cda4d38eca2</digest>
+      <digest algorithm='sha512'>75cdac7647838f1786633fb7965e1689873e26986c34f31a186593f23f39161df6a77237ea2e3791b286502a06a37519b8eaa4d4acd152c4231487964b47aa40</digest>
+      <type_category>regular</type_category>
+      <type>text</type>
+      <permissions>-rw-rw-r--</permissions>
+      <linkcount>1</linkcount>
+      <user>root</user>
+      <group>root</group>
+      <size>1582</size>
+      <blksize>32768</blksize>
+      <blocks>8</blocks>
+      <modtime>2012-12-07 19:13:58+00</modtime>
+      <changetime>2012-12-07 19:15:05+00</changetime>
+      <acctime>2014-02-04 01:10:22+00</acctime>
+      <sumtime>2014-02-04 01:10:22+00</sumtime>
+    </file>
+    <file>
+      <path>data</path>
+      <digest algorithm='md5'>d41d8cd98f00b204e9800998ecf8427e</digest>
+      <digest algorithm='sha1'>da39a3ee5e6b4b0d3255bfef95601890afd80709</digest>
+      <digest algorithm='sha256'>e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</digest>
+      <digest algorithm='sha384'>38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b</digest>
+      <digest algorithm='sha512'>cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e</digest>
+      <type_category>irregular</type_category>
+      <type>directory</type>
+      <permissions>drwxrwxr-x</permissions>
+      <linkcount>3</linkcount>
+      <user>root</user>
+      <group>root</group>
+      <size>4096</size>
+      <blksize>32768</blksize>
+      <blocks>8</blocks>
+      <modtime>2012-12-07 19:13:55+00</modtime>
+      <changetime>2012-12-07 19:15:05+00</changetime>
+      <acctime>2014-02-03 08:16:26+00</acctime>
+      <sumtime>2014-02-04 01:10:22+00</sumtime>
+    </file>
+    <file>
+      <path>data/0-data</path>
+      <digest algorithm='md5'>d41d8cd98f00b204e9800998ecf8427e</digest>
+      <digest algorithm='sha1'>da39a3ee5e6b4b0d3255bfef95601890afd80709</digest>
+      <digest algorithm='sha256'>e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</digest>
+      <digest algorithm='sha384'>38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b</digest>
+      <digest algorithm='sha512'>cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e</digest>
+      <type_category>irregular</type_category>
+      <type>directory</type>
+      <permissions>drwxrwxr-x</permissions>
+      <linkcount>3</linkcount>
+      <user>root</user>
+      <group>root</group>
+      <size>4096</size>
+      <blksize>32768</blksize>
+      <blocks>8</blocks>
+      <modtime>2012-12-07 19:13:56+00</modtime>
+      <changetime>2012-12-07 19:15:05+00</changetime>
+      <acctime>2014-02-03 08:16:26+00</acctime>
+      <sumtime>2014-02-04 01:10:22+00</sumtime>
+    </file>
+    <file>
+      <path>data/0-data/ESTOC_Meta.html</path>
+      <digest algorithm='md5'>f421fb2a2c0d6f1d8058821e2bc88793</digest>
+      <digest algorithm='sha1'>7cac8c8b6ab0e91574866fe26de3af170b8a4a20</digest>
+      <digest algorithm='sha256'>c4c56339df5e9067a46083edfc417bc9b02c3163de164c82344e9786e0838510</digest>
+      <digest algorithm='sha384'>68f50465dca2ee6c39412df2b7af65cb94acbb7366ff71274cbbf0eb201cd09c03e05b4a4fcaf450034f13d6caec1642</digest>
+      <digest algorithm='sha512'>86b508f6de3a71731d036efb59bf8fc036c29f788caf0c8bd6b14be0ef0a4d7329d024538a6abe3c5306b4d8c87f57c3ef620b6da9d278afadaf16e1c1e0ce46</digest>
+      <type_category>regular</type_category>
+      <type>text</type>
+      <permissions>-rw-rw-r--</permissions>
+      <linkcount>1</linkcount>
+      <user>root</user>
+      <group>root</group>
+      <size>5554</size>
+      <blksize>32768</blksize>
+      <blocks>16</blocks>
+      <modtime>2011-10-27 13:38:00+00</modtime>
+      <changetime>2012-12-07 19:15:05+00</changetime>
+      <acctime>2014-02-04 01:10:22+00</acctime>
+      <sumtime>2014-02-04 01:10:22+00</sumtime>
+    </file>
+    <file>
+      <path>data/0-data/ESTOC_TS_Data_1995-2009.csv</path>
+      <digest algorithm='md5'>900fcc54aac4b656d9be75b564269a39</digest>
+      <digest algorithm='sha1'>2d340588b9e2821091b2bb9a6ff06342bea3b664</digest>
+      <digest algorithm='sha256'>5cfd541f86ed534dc71962761a69d225579064523713c94a3461d01570ee28d6</digest>
+      <digest algorithm='sha384'>706bd9305449bd4e178d76c80cf57bfd025871ee15c45e5924d90cd1ee8b86afae9f11bc9fcf5a17f21315284c5adb95</digest>
+      <digest algorithm='sha512'>b19107701ae06c6bbeea919c78856b5ac4c376710ad7711487ab45b6ba2fb9304941543f248ecd55ae8ea6e63950e62c99e355a7d200d670569e5d6051e16122</digest>
+      <type_category>regular</type_category>
+      <type>text</type>
+      <permissions>-rw-rw-r--</permissions>
+      <linkcount>1</linkcount>
+      <user>root</user>
+      <group>root</group>
+      <size>12471</size>
+      <blksize>32768</blksize>
+      <blocks>32</blocks>
+      <modtime>2011-11-01 18:39:53+00</modtime>
+      <changetime>2012-12-07 19:15:05+00</changetime>
+      <acctime>2014-02-04 01:10:22+00</acctime>
+      <sumtime>2014-02-04 01:10:22+00</sumtime>
+    </file>
+    <file>
+      <path>data/0-data/README</path>
+      <digest algorithm='md5'>45ca11f48e702beea13be2ac83b3fb76</digest>
+      <digest algorithm='sha1'>f6efc8e31f796497b700aede0cd61f452c9d2d99</digest>
+      <digest algorithm='sha256'>08c80c9f8596cbce3e31ce85a200deab155057a83d002d37b39364dcc7b31f0b</digest>
+      <digest algorithm='sha384'>1c9722f5cebf98b1be90be0186693e06f5cdfedad9b2a90522e29d5440c121c3117b915f05a17d1286411d467a3a6956</digest>
+      <digest algorithm='sha512'>e3c4b5b737e9d0c1951154044895e1754fc4ddb2efa1b9e0df5e60b85cbe49bdfc8977a2ca2e970321554ef6391420f2e6f28a1fc9cddc50771194daaa87d86c</digest>
+      <type_category>regular</type_category>
+      <type>text</type>
+      <permissions>-rw-rw-r--</permissions>
+      <linkcount>1</linkcount>
+      <user>root</user>
+      <group>root</group>
+      <size>390</size>
+      <blksize>32768</blksize>
+      <blocks>8</blocks>
+      <modtime>2011-11-01 18:23:22+00</modtime>
+      <changetime>2012-12-07 19:15:05+00</changetime>
+      <acctime>2014-02-04 01:10:22+00</acctime>
+      <sumtime>2014-02-04 01:10:22+00</sumtime>
+    </file>
+    <file>
+      <path>data/0-data/oceanuw</path>
+      <digest algorithm='md5'>d41d8cd98f00b204e9800998ecf8427e</digest>
+      <digest algorithm='sha1'>da39a3ee5e6b4b0d3255bfef95601890afd80709</digest>
+      <digest algorithm='sha256'>e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</digest>
+      <digest algorithm='sha384'>38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b</digest>
+      <digest algorithm='sha512'>cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e</digest>
+      <type_category>irregular</type_category>
+      <type>directory</type>
+      <permissions>drwxrwxr-x</permissions>
+      <linkcount>2</linkcount>
+      <user>root</user>
+      <group>root</group>
+      <size>4096</size>
+      <blksize>32768</blksize>
+      <blocks>8</blocks>
+      <modtime>2012-12-07 19:13:56+00</modtime>
+      <changetime>2012-12-07 19:15:05+00</changetime>
+      <acctime>2014-02-03 08:16:26+00</acctime>
+      <sumtime>2014-02-04 01:10:22+00</sumtime>
+    </file>
+    <file>
+      <path>data/0-data/oceanuw/Mercury-FGDC.xml</path>
+      <digest algorithm='md5'>3bf4ac5433878812c217812f9e77b5cd</digest>
+      <digest algorithm='sha1'>036843fbd86ccb16ce3243f2ae26592a6926862a</digest>
+      <digest algorithm='sha256'>bddf9eaf9cc2e3fb80c8c9f95ce0b2cfb931509cb6b99ae8c64f178eef5d48b3</digest>
+      <digest algorithm='sha384'>4364a98661de2cad1823d92daff35a3c7dcf7f60468fa39e2cd0aa0290fe42c1a02aef4425cb542d6cef4ff0577d9a8a</digest>
+      <digest algorithm='sha512'>817061c015970ee7214ccacd0d7fc52139908630f74a8ec5d96a4a7e3f8f0e89b5bb32f88cf6bd1e9e66521f6c3d34fe42924548c3558b85db1bd43a3ea41d7a</digest>
+      <type_category>regular</type_category>
+      <type>text</type>
+      <permissions>-rw-rw-r--</permissions>
+      <linkcount>1</linkcount>
+      <user>root</user>
+      <group>root</group>
+      <size>9731</size>
+      <blksize>32768</blksize>
+      <blocks>24</blocks>
+      <modtime>2012-09-23 15:59:23+00</modtime>
+      <changetime>2012-12-07 19:15:05+00</changetime>
+      <acctime>2014-02-04 01:10:22+00</acctime>
+      <sumtime>2014-02-04 01:10:22+00</sumtime>
+    </file>
+  </files>
+</accession>
