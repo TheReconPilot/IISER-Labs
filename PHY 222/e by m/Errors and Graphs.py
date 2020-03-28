@@ -85,7 +85,6 @@ print("--- e/m ---")
 display(e_by_m)
 
 e_by_m_avg = np.mean(e_by_m)
-print(e_by_m_avg)
 e_by_m_lit_val = 1.758820E+11
 
 print("Average: {:.3eP}".format(np.mean(e_by_m)))
